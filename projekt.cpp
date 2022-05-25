@@ -2,10 +2,15 @@
 #include <string.h>
 #include<iostream>
 #include<algorithm>
+#include<ofstream>
+#include<ifstream>
+#include<fstream>
+
+
 using namespace std;
 
 int main() {
-    // uèitavanje rijeèi
+    // uï¿½itavanje rijeï¿½i
     char odgovor[128];
     char abeceda[22] = { 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','Z' };
     char kopija_abecede[22] = { 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','Z' };
@@ -50,7 +55,7 @@ int main() {
     cout<<"__|_________\n\n";
 
     while (!kraj) {
-        // Ispisuje se rijeè tako da umjesto slova koja nisu pogodena pisemo -
+        // Ispisuje se rijeï¿½ tako da umjesto slova koja nisu pogodena pisemo -
         cout<<"Rijec glasi:";
         for (int j = 0; j < duljina; ++j) {
             if (pogodeno[j]) {
@@ -219,7 +224,7 @@ int main() {
 
             zastavica = 0;
 
-            // Odreðujemo je li igrac pobijedio
+            // Odreï¿½ujemo je li igrac pobijedio
             if (br != 0) {
                 kraj = 1;
                 for (int m = 0; m < duljina; ++m) {
@@ -234,7 +239,7 @@ int main() {
 
     }
 
-    // pobjednièka poruka
+    // pobjedniï¿½ka poruka
     if (br != 0)
         cout<< "Pobjeda! Odgovor je:\n" << odgovor;
 
